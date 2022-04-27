@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#367CFF"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="English Learning"
+                   android:textStyle="bold"
+                   android:textColor="#FFFFFF"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="20sp"
+                   android:layout_marginLeft="20dp"/>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/sounds"
+                   android:layout_marginTop="12dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginLeft="10dp"
+                   app:tint="#FFFF" />
+
+           </LinearLayout>
+
+           <GridLayout
+               android:layout_width="match_parent"
+               android:columnCount="2"
+               android:layout_height="wrap_content">
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="Hello"
+                   android:backgroundTint="#367CFF"
+                   android:onClick="caraBaca"
+                   android:id="@+id/hello"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:backgroundTint="#D86DE5"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:onClick="caraBaca"
+                   android:text="hi"
+                   android:id="@+id/hi"/>
+
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   android:backgroundTint="#FF6DB2"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="Goodbye"
+                   android:onClick="caraBaca"
+                   android:id="@+id/goodbye"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                    android:backgroundTint="#FF937E"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="please"
+                   android:onClick="caraBaca"
+                   android:id="@+id/please"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   app:cornerRadius="12dp"
+                   android:backgroundTint="#FFC75F"
+                   android:textColor="#402C09"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="yes"
+                   android:onClick="caraBaca"
+                   android:id="@+id/yes"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                    android:backgroundTint="#F9F871"
+                   android:textColor="#353508"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="no"
+                   android:onClick="caraBaca"
+                   android:id="@+id/no"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                    android:backgroundTint="#736EEB"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="bye"
+                   android:onClick="caraBaca"
+                   android:id="@+id/bye"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                android:backgroundTint="#935FD5"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="cheers"
+                   android:onClick="caraBaca"
+                   android:id="@+id/cheers"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                android:backgroundTint="#A651BD"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:layout_margin="5dp"
+                   android:text="thank &#10;you"
+                   android:onClick="caraBaca"
+                   android:id="@+id/thank_you"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   app:cornerRadius="12dp"
+                   android:layout_columnWeight="1"
+                   android:layout_rowWeight="1"
+                   android:layout_gravity="fill"
+                   android:backgroundTint="#B145A4"
+                   android:layout_margin="5dp"
+                   android:text="excuse &#10;me"
+                   android:onClick="caraBaca"
+                   android:id="@+id/excuse_me"/>
+
+
+           </GridLayout>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ilus_discus"
+               android:layout_gravity="center"/>
+
+       </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
